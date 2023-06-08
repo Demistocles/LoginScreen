@@ -24,25 +24,32 @@ const Login = ({ handleLogin }) => {
 
   return (
     <div className='login-screen'>
-      <div className='login'>
-        <h1>Login</h1>
-        <form>
+      <div>
+        <div className='big-ellipse'/>
+        <div className='small-ellipse'/>
+        <div className='triangle1'/>
+        <div className='triangle2'/>
+        <div className='triangle3'/>
+        <form className='login'>
+          <h1>Login</h1>
           <input
+            className='input-login'
             type='email'
-            placeholder='digite seu login...'
+            placeholder='Username'
             value={email}
             onChange={(e) => {setEmail(e.target.value)}}
             />
           <input
+            className='input-password'
             type='password'
-            placeholder='digite sua senha...'
+            placeholder='Password'
             value={password}
             onChange={(e) => {setPassword(e.target.value)}}
             />
           <button
             type='submit'
             onClick={validateLogin}
-            >logar</button>
+            >login</button>
         </form>
 
       </div>
